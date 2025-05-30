@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Complexity Estimator (Gemini)",
+  "version": "1.0",
+  "description": "Uses Gemini to estimate time and space complexity of your LeetCode solution.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "128": "icon.png"
+  }
+}
